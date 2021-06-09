@@ -9,28 +9,41 @@
   </head>
   <body>
     <div class="main">
-      <div class="product"></div>
+      <div class="product">
+        <div class="productimg_tablets"> <img src="img/image2.png" alt=""></div>
+        <div class="productimg_elips1"><img src="img/Ellipse1.png" alt=""></div>
+        <div class="productimg_elips2"><img src="img/Ellipse2.png" alt=""></div>
+        <div class="productimg_elips3"> <img src="img/Ellipse6.png" alt=""></div>
+        <div class="product_text1">Reduslim</div>
+        <div class="product_text2">ECO</div>
+      </div>
       <div class="form">
         <div class="form_title">Сделай шаг к выздоровлению</div>
         <div class="form_name"> 
-          <div class="form_name-title">ВАШЕ ИМЯ</div>
+          <div class="form_name-title">ВАШЕ <span>ИМЯ</span></div>
           <input class="input_name" placeholder="Алексей">
         </div>
         <div class="form_phone"> 
-          <div class="form_name-title">ВАШ ТЕЛЕФОН</div>
+          <div class="form_name-title">ВАШ <span>ТЕЛЕФОН</span></div>
           <div class="phone_inputs">
-            <input class="phone_input" placeholder="+7(123)456 78-90">
-            <select class="phone_country">
-              <option class="rus" value="russia"> 
-                <div class="rusvalue">RU</div>
-              </option>
-              <option class="usa" value="usa"> 
-                <div class="usasvalue">USA</div>
-              </option>
-            </select>
+            <input class="phone_input" placeholder="+7 (123) 456 78-90">
+            <div class="select_wrapper">
+              <select class="phone_country">
+                <option class="rus" value="russia"> 
+                  <div class="rusvalue">RU</div>
+                </option>
+                <option class="usa" value="usa"> 
+                  <div class="usasvalue">USA</div>
+                </option>
+              </select>
+            </div>
           </div>
         </div>
-        <button class="form_send" placeholder="Закзать" type="submit"></button>
+        <button class="form_send" placeholder="Закзать" type="submit">Заказать</button>
+      </div>
+      <div class="footer">
+        <div class="footer_text">Trusted </div>
+        <div class="footer_text2">Secure   </div>
       </div>
     </div>
     <script src="js/main.js"></script>

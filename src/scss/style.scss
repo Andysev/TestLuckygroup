@@ -1,5 +1,301 @@
-.blue{
-    background-color: blue;
-    width: 60px;
-    height: 60px;
+@import  "../../node_modules/normalize.css/normalize";
+@import 'fonts';
+.main{
+  
+    background: #F4F4F4;
+    display: flex;
+    flex-direction: row;
+    padding-top: 75px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.product{
+    width: 560px;
+    height: 500px;
+    background: linear-gradient(180deg, #428A60 0%, #35734F 100%);
+    position: relative;
+    overflow: hidden;
+}
+.product_text1{
+    font-family: 'Montserrat-Bold';
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    font-size: 18px;
+}
+.product_text2{
+    font-family: 'Montserrat-Bold';
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    font-size: 18px;
+}
+.productimg_tablets {
+    position: absolute;
+    bottom: 33px;
+    left: 57px;
+    z-index: 3;
+}
+.productimg_elips1{
+    position: absolute;
+    left: 20px;
+    top: 71px;
+    z-index: 2;
+}
+.productimg_elips2{
+    position: absolute;
+    left: 264px;
+    top: -19px;
+}
+.form{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.form_title{
+    font-size: 30px;
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    font-weight: 800;
+    background: #F8F8F8;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    padding-right: 129px;
+    padding-left: 129px;
+    text-align: center;
+    font-size: 30px;
+}
+.form_name{
+    margin-top: 52px;
+    padding-left: 127px;
+
+}
+.form_name-title{
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    span{
+        color: #428A60;
+    }
+}
+.input_name{
+    margin-top: 10px;
+    width: 320px;
+    height: 50px;
+    background-color: rgba(248, 248, 248, 1);
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    color: rgba(33, 33, 33, 1);
+}
+.phone_inputs{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.phone_input{
+   
+    width: 184px;
+    height: 50px;
+    background-color: rgba(248, 248, 248, 1);
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    color: rgba(33, 33, 33, 1);
+}
+.form_phone{
+    margin-top: 20px;
+    padding-left: 127px;
+}
+.phone_country{
+    background-color: rgba(248, 248, 248, 1);
+    padding-left: 11px;
+    border: none;
+    width: 116px;
+    height: 53px;
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.select_wrapper{
+    position: relative;
+    margin-left: 20px;
+    background-color: rgba(248, 248, 248, 1);
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+    width: 116px;
+    height: 53px;
+    
+    &::before{
+        content:url(../img/image7.png);
+        position: absolute;
+        left: 52px;
+        top: 16px;
+    }
+    &::after{
+        content:url(../img/Polygon1.png);
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+}
+.form_send{
+    margin-top: 38px;
+    background: #428A60;
+    width: 320px;
+    height: 42px;
+    color: #fff;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 117px;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #428A60;
+    &::after{
+        content:url(../img/Vector2.svg);
+        position: absolute;
+        top: 13px;
+        left: 200px;
+    }
+}
+.productimg_elips3{
+    visibility: hidden;
+}
+.footer{
+    display: none;
+}
+@media  (max-width: 400px) {
+    .main{
+        flex-direction: column;
+       padding-top: 60px;
+       padding-left: 0;
+       padding-right: 0;
+    }
+    .product{
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        background: #fff;
+        height: 311px;
+    }
+    .product_text1{
+        left: 20px;
+        top: 40px;
+        color: #000;
+    }
+    .product_text2{
+        top: 40px;
+        left: 259px;
+        bottom: 0;
+        color: #000;
+    }
+    .productimg_elips3{
+        top: 72px;
+        left: 59px;
+        visibility: visible;
+        position: absolute;
+    }
+    .productimg_elips1,
+    .productimg_elips2{
+        display: none;
+    }
+    .productimg_tablets{
+        top: 120px;
+        left: 56px;
+        width: 223px;
+        height: 122px;
+        background-image: url(../img/image2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        img{
+            display: none;
+        }
+    }
+    .form{
+        align-items: start;
+    }
+    .form_title{
+        background: #fff;
+        padding: 0;
+    }
+    .form_name{
+        margin-top: 28px;
+        margin-left: 20px;
+        padding-left: 0;
+    }
+    .input_name{
+        width: 230px;
+        height: 50px;
+    }
+    .form_phone{
+        margin-top: 28px;
+        margin-left: 20px;
+        padding-left: 0;
+    }
+    .phone_input{
+        width: 154px;
+    }
+    .select_wrapper{
+        width: 96px;
+        margin-left: 10px;
+        &::before{
+            content:url(../img/image7.png);
+            position: absolute;
+            left: 45px;
+            top: 16px;
+        }
+        &::after{
+            content:url(../img/Polygon1.png);
+            position: absolute;
+            right: 10px;
+            top: 15px;
+        }
+    }
+    .phone_country{
+        padding-left: 10px;
+        width: 96px;
+
+    }
+    .form_send{
+        margin-left: 0;
+        width: 280px;
+        margin-top: 28px;
+        margin-left: 20px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-top: 28px;
+        padding-bottom: 16px;
+        background: #F8F8F8;
+    }
+    .footer_text{
+        margin-right: 52px;
+        font-weight: 700;
+        font-family: 'Montserrat-Bold', sans-serif;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: url(../img/lock.png);
+            left: 78px;
+        }
+    }
+    .footer_text2{
+        font-family: 'Montserrat-Bold', sans-serif;
+        font-weight: 700;
+    }
 }
