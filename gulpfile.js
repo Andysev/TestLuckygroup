@@ -30,7 +30,9 @@ gulp.task('build-js', function(){
   gulp.task("copy-assets", () => {
     gulp.src("./src/icons/**/*.*")
         .pipe(gulp.dest(dist + "/icons"));
-  
+    return gulp.src("./src/fonts/**/*.*")
+        .pipe(gulp.dest(dist + "/fonts"))
+       
     return gulp.src("./src/img/**/*.*")
       .pipe(gulp.dest(dist + "/img"))
       .pipe(browsersync.stream());
@@ -69,6 +71,8 @@ gulp.task("prod", () => {
       .pipe(gulp.dest(dist + "/img"));
   gulp.src("./src/icons/**/*.*")
       .pipe(gulp.dest(dist + "/icons"));
+  gulp.src("./src/fonts/**/*.*")
+      .pipe(gulp.dest(dist + '/fonts'));
   gulp.src("./src/js/main.js")
       .pipe(gulp.dest(dist + '/js'));
   
