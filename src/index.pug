@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.css")
+        title Test for Lucky group1
+    body
+        .main
+            .product
+            .form
+                .form_title Сделай шаг к выздоровлению
+                .form_name 
+                    .form_name-title ВАШЕ ИМЯ
+                    input.input_name(placeholder="Алексей")
+                .form_phone 
+                    .form_name-title ВАШ ТЕЛЕФОН
+                    .phone_inputs
+                        input.phone_input(placeholder="+7(123)456 78-90")
+                        select.phone_country
+                            option.rus(value="russia") 
+                                .rusvalue RU
+                            option.usa(value="usa") 
+                                    .usasvalue USA
+                button.form_send(placeholder="Закзать" type="submit")
+                   
+        script(src="js/main.js")
+
+    
